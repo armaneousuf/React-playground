@@ -1,0 +1,49 @@
+.nav-bar {
+  background-color: #21222a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+
+  .react-logo {
+    color: #00d8ff;
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav-title {
+    color: #61dafb;
+    font-size: 25px;
+  }
+}
+
+.main-container {
+  background-color: #282D35;
+  width: 700px;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+
+  .main-title {
+    font-size: 40px;
+    margin-left: 25px;
+  }
+
+  .lists {
+    margin-left: 70px;
+    font-size: 18px;
+  }
+  
+  .lists li::marker {
+    color: #61DAFB;
+    font-size: 1.2em;
+  }
+}
+
+.main-container .react-logo-bg {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  height: 150px;
+  color: red;
+}
