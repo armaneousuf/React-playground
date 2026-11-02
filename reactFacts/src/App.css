@@ -4,6 +4,9 @@
   align-items: center;
   gap: 10px;
   padding: 10px;
+  height: 90px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 
   .react-logo {
     color: #00d8ff;
@@ -31,6 +34,7 @@
 
   .lists {
     margin-left: 70px;
+    margin-top: 35px;
     font-size: 18px;
   }
   
