@@ -1,7 +1,7 @@
 import markerImg from "../assets/marker.svg";
 export default function Entry() {
   return (
-    <div>
+    <article>
       <div className="panels">
         <div className="rigth-panel">
           <img
@@ -27,6 +27,6 @@ export default function Entry() {
           </div>
         </div>
       </div>
-    </div>
+    </article>
   );
 }
