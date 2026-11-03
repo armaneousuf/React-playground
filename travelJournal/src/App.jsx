@@ -1,12 +1,19 @@
 import Header from './components/Header';
-import Entry from './components/Entry'
+import Entry from './components/Entry';
+import data from './data';
 import './App.css'
 
 export default function App() {
+  const entries = data.map((item) => {
+   return <Entry 
+    key={item.id}
+    {...item}
+    />
+  })
   return(
     <div className="container">
       <Header />
-      <Entry />
+      {entries}
     </div>
   )
 }
