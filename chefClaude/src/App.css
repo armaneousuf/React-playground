@@ -1,0 +1,23 @@
+.container {
+  border: 2px solid green;
+  max-width: 700px;
+  padding: 30px 20px;
+  margin: 0 auto;
+}
+
+img {
+  height: 45px;
+  width: 45px;
+  object-fit: contain;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 2rem;
+
+  padding: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
