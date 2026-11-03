@@ -5,11 +5,7 @@
   margin: 0 auto;
 }
 
-img {
-  height: 45px;
-  width: 45px;
-  object-fit: contain;
-}
+
 
 .nav-bar {
   display: flex;
