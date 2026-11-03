@@ -4,10 +4,10 @@ import data from './data';
 import './App.css'
 
 export default function App() {
-  const entries = data.map((item) => {
+  const entries = data.map((entry) => {
    return <Entry 
-    key={item.id}
-    {...item}
+    key={entry.id}
+    {...entry}
     />
   })
   return(
