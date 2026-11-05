@@ -2,19 +2,16 @@ import { useState } from "react";
 export default function Main() {
   const [ingredients, setIngredients] = useState([]);
   const ingredientListItems = ingredients.map((item) => {
-    return <li key={item}>{item}</li>;
+    return <li key={item} className="list-items">{item}</li>;
   });
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    const formData = new FormData(e.currentTarget);
+  function handleSubmit(formData) {
     const newIngredient = formData.get("ingredient");
     setIngredients((prevIngredient) => [...prevIngredient, newIngredient]);
-    e.currentTarget.reset();
   }
   return (
     <main>
-      <form className="ingredient-form" onSubmit={handleSubmit}>
+      <form className="ingredient-form" action={handleSubmit}>
         <input
           aria-label="Add Ingredient"
           type="text"
