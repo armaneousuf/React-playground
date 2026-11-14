@@ -1,28 +1,52 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
+    margin: 0;
+    background-color: #0B2434;
+    padding: 20px;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#root {
+    height: 100%;
+    width: 100%;
+    max-height: 400px;
+    max-width: 400px;
+}
+
+main {
+    background-color: #F5F5F5;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100dvh;
-    background-color: #FBFAF2;
 }
 
-.container {
-    background-color: #0B2434;
-    height: 500px;
-    width: 500px;
+.dice-container {
     display: grid;
-    place-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
 }
 
-.child {
+.dice-container button {
+    font-size: 1.75rem;
+    height: 50px;
+    width: 50px;
+    border: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
     background-color: #fff;
-    height: 430px;
-    width: 430px;
-    border-radius: 10px;
+    cursor: pointer;
+}
+
+.roll-dice {
+    background-color: #5035FF;
+
 }
