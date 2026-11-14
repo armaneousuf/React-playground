@@ -1,3 +1,5 @@
+// later plan: add click to place text so a user can write text wherever they want
+
 import { useState, useEffect } from "react";
 export default function Main() {
   const [meme, setMeme] = useState({
