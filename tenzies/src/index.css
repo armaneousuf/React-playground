@@ -48,5 +48,11 @@ main {
 
 .roll-dice {
     background-color: #5035FF;
-
+    padding: 10px;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 10px;
 }

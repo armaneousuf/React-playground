@@ -13,12 +13,15 @@ export default function App() {
     return newDice;
   }
 
-  console.log(generateAllNewDice());
+  function rollDice() {
+    setDice(generateAllNewDice())
+  }
+
   const diceElement = dice.map((num) => <Die value={num} />);
   return (
     <main>
       <div className="dice-container">{diceElement}</div>
-      <button className="roll-dice">Roll Dice</button>
+      <button className="roll-dice" onClick={rollDice}>Roll Dice</button>
     </main>
   );
 }
