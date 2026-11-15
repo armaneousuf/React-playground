@@ -4,7 +4,7 @@ import { useState } from "react";
 import Confetti from "react-confetti";
 
 export default function App() {
-  const [dice, setDice] = useState(generateAllNewDice());
+  const [dice, setDice] = useState(() => generateAllNewDice());
 
   const gameWon =
     dice.every((die) => die.isHeld) &&
@@ -19,7 +19,8 @@ export default function App() {
   }
 
   function rollDice() {
-    setDice((oldDice) =>
+    if(!gameWon) {
+      setDice((oldDice) =>
       oldDice.map((die) => {
         return die.isHeld
           ? die
@@ -29,6 +30,9 @@ export default function App() {
             };
       }),
     );
+    } else {
+      setDice(generateAllNewDice())
+    }
   }
 
   function hold(id) {
